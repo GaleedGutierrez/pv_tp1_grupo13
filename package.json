@@ -1,0 +1,94 @@
+{
+	"name": "pv_tp1_grupo777",
+	"version": "0.0.1",
+	"description": "Trabajo Práctico 1 - Grupo 777",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/GaleedGutierrez/pv_tp1_grupo777.git"
+	},
+	"keywords": [
+		"HTML",
+		"CSS"
+	],
+	"author": "Galeed Gutierrez <galeedeveloper@gmail.com> (https://galeedgutierrez.com/)",
+	"contributors": [
+		{
+			"name": "Alfredo Ezequiel Gonzalez Lopez",
+			"url": "https://github.com/Ezequiel12354s"
+		},
+		{
+			"name": "Enzo Isaías Condori",
+			"url": "https://github.com/isaiahOZ"
+		},
+		{
+			"name": "Tomas Leandro Tastaca Gutierrez"
+		},
+		{
+			"name": "Franklin Fernando Alexander Vazquez",
+			"url": "https://github.com/VasquezFranklin"
+		}
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/GaleedGutierrez/pv_tp1_grupo777/issues"
+	},
+	"homepage": "https://github.com/GaleedGutierrez/pv_tp1_grupo777#readme",
+	"scripts": {
+		"prettier": "prettier . --check",
+		"prettier:fix": "prettier . --write",
+		"stylelint": "stylelint ./**/*.{css,scss} --allow-empty-input",
+		"stylelint:fix": "stylelint --fix ./**/*.{css,scss} --allow-empty-input",
+		"check-for-dupes": "jscpd ./",
+		"prepare": "husky || true"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"husky": "^9.1.7",
+		"prettier": "^3.5.3",
+		"stylelint": "^16.17.0",
+		"stylelint-config-standard": "^37.0.0",
+		"stylelint-order": "^6.0.4",
+		"stylelint-prettier": "^5.0.3"
+	},
+	"prettier": {
+		"overrides": [
+			{
+				"files": "*.jsonc",
+				"options": {
+					"trailingComma": "none"
+				}
+			},
+			{
+				"files": "*.mdx",
+				"options": {
+					"useTabs": false
+				}
+			}
+		],
+		"singleAttributePerLine": true
+	},
+	"lint-staged": {
+		"*{css,s(a|c)ss}": "npm run stylelint:fix"
+	},
+	"jscpd": {
+		"threshold": 3.5,
+		"reporters": [
+			"consoleFull"
+		],
+		"ignore": [
+			"**/node_modules/**",
+			"**/dist/**",
+			"**/dist-dev/**",
+			"**/build/**",
+			"**/fonts/**",
+			"**/coverage/**",
+			"**/playwright-reports/**",
+			"**/test-results/**",
+			"**/lighthouse-report/**",
+			"**/.astro/**",
+			"**/tsconfig.*.json"
+		],
+		"absolute": true
+	}
+}
