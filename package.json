@@ -53,20 +53,6 @@
 		"stylelint-prettier": "^5.0.3"
 	},
 	"prettier": {
-		"overrides": [
-			{
-				"files": "*.jsonc",
-				"options": {
-					"trailingComma": "none"
-				}
-			},
-			{
-				"files": "*.mdx",
-				"options": {
-					"useTabs": false
-				}
-			}
-		],
 		"singleAttributePerLine": true
 	},
 	"lint-staged": {
