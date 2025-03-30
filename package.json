@@ -36,8 +36,8 @@
 	"scripts": {
 		"prettier": "prettier . --check",
 		"prettier:fix": "prettier . --write",
-		"stylelint": "stylelint ./**/*.{css,scss} --allow-empty-input",
-		"stylelint:fix": "stylelint --fix ./**/*.{css,scss} --allow-empty-input",
+		"stylelint": "stylelint ./**/*.{css} --allow-empty-input",
+		"stylelint:fix": "stylelint --fix ./**/*.{css} --allow-empty-input",
 		"check-for-dupes": "jscpd ./",
 		"prepare": "husky || true"
 	},
@@ -53,20 +53,6 @@
 		"stylelint-prettier": "^5.0.3"
 	},
 	"prettier": {
-		"overrides": [
-			{
-				"files": "*.jsonc",
-				"options": {
-					"trailingComma": "none"
-				}
-			},
-			{
-				"files": "*.mdx",
-				"options": {
-					"useTabs": false
-				}
-			}
-		],
 		"singleAttributePerLine": true
 	},
 	"lint-staged": {
@@ -80,15 +66,9 @@
 		"ignore": [
 			"**/node_modules/**",
 			"**/dist/**",
-			"**/dist-dev/**",
 			"**/build/**",
 			"**/fonts/**",
-			"**/coverage/**",
-			"**/playwright-reports/**",
-			"**/test-results/**",
-			"**/lighthouse-report/**",
-			"**/.astro/**",
-			"**/tsconfig.*.json"
+			"**/lighthouse-report/**"
 		],
 		"absolute": true
 	}

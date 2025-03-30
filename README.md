@@ -4,8 +4,7 @@ Trabajo Práctico N°1
 
 ## Requisitos
 
-- [Node.js](https://nodejs.org) instalado.
-- [npm](https://www.npmjs.com) (gestor de paquetes de Node.js).
+- [Node.js](https://nodejs.org).
 
 ## Instalación
 
