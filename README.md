@@ -10,7 +10,8 @@ Trabajo Práctico N°1
 ## Instalación
 
 Antes de comenzar a desarrollar, necesitas instalar las dependencias. Para ello,
- abre la terminal en el directorio del proyecto y ejecuta el siguiente comando:
+abre la terminal en el directorio del proyecto y ejecuta el siguiente comando:
 
 ```bash
 npm install
+```
