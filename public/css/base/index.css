@@ -9,3 +9,6 @@
 
 /* Mixins */
 @import url("./tools/index.css");
+
+/* Atoms */
+@import url("./atoms/index.css");
