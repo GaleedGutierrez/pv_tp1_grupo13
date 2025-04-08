@@ -1,5 +1,33 @@
 @import url("./base/index.css");
 
+.body {
+	position: relative;
+}
+
+.header {
+	position: absolute;
+	inset-block-start: 0;
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	height: fit-content;
+	inline-size: 100%;
+	padding: var(--space-10);
+
+	.header__nav {
+		display: flex;
+		gap: var(--space-6);
+	}
+
+	.header__logo {
+		color: var(--white);
+
+		&:active {
+			color: var(--gold);
+		}
+	}
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
