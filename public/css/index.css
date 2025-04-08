@@ -1,3 +1,5 @@
+@import url("./base/index.css");
+
 * {
 	box-sizing: border-box;
 	padding: 0;
