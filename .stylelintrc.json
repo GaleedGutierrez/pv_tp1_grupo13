@@ -7,7 +7,6 @@
 		"selector-id-pattern": "^[a-zA-Z0-9\\-]+(__[a-zA-Z0-9\\-]+)?(--[a-zA-Z0-9\\-]+)?$|^\\.[A-Za-z][a-zA-Z0-9\\-]*(__[a-zA-Z0-9\\-]+)?(--[a-zA-Z0-9\\-]+)?$",
 		"selector-class-pattern": "^[a-zA-Z0-9\\-]+(__[a-zA-Z0-9\\-]+)?(--[a-zA-Z0-9\\-]+)?$|^\\.[A-Za-z][a-zA-Z0-9\\-]*(__[a-zA-Z0-9\\-]+)?(--[a-zA-Z0-9\\-]+)?$",
 		"keyframes-name-pattern": "^[a-zA-Z0-9\\-]+(__[a-zA-Z0-9\\-]+)?(--[a-zA-Z0-9\\-]+)?$|^\\.[A-Za-z][a-zA-Z0-9\\-]*(__[a-zA-Z0-9\\-]+)?(--[a-zA-Z0-9\\-]+)?$",
-		"color-no-hex": true,
 		"color-function-notation": "modern",
 		"font-weight-notation": "named-where-possible",
 		"property-no-vendor-prefix": true,
