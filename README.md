@@ -52,9 +52,18 @@ npx stylelint "/*.css" --fix
 ## CSS
 
 La unidad 1rem es equivalente a 10px.
+Ejemplo:
 
 ```css
 1rem = 10px
+```
+
+Los custom properties son múltiplo de 4
+Ejemplo:
+
+```css
+var(--space-025) = 1rem = 1px
+var(--space-1) = 4rem = 4px
 ```
 
 ## 👥 Integrantes
