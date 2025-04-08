@@ -1,0 +1,35 @@
+/* stylelint-disable no-descending-specificity */
+.boton {
+	display: inline-flex;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:active .buton__text {
+		background-color: var(--gold);
+	}
+
+	&:active .boton__flecha {
+		background-color: var(--almost-black);
+	}
+
+	.buton__text {
+		inline-size: 100%;
+		padding: var(--space-5) var(--space-7);
+		background-color: var(--almost-black);
+		color: var(--white);
+		font-family: var(--font-heading);
+		font-size: var(--fs-title-xs);
+		letter-spacing: 0.364rem;
+	}
+
+	.boton__flecha {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding-inline: var(--space-6);
+		background-color: var(--gold);
+		color: var(--white);
+	}
+}
