@@ -1,0 +1,42 @@
+/* stylelint-disable custom-property-pattern */
+:root {
+	/* Typography scale */
+	--fs-base: 62.5%;
+
+	/* Weight */
+	--weight-thin: 100;
+	--weight-extra-light: 200;
+	--weight-light: 300;
+	--weight-regular: normal;
+	--weight-medium: 500;
+	--weight-semibold: 600;
+	--weight-bold: bold;
+	--weight-extra-bold: 800;
+	--weight-black: 900;
+
+	/* Typography applications */
+	--fs-body-sm: 1.2rem;
+	--fs-body-md: 1.4rem;
+	--fs-body-lg: 1.6rem;
+	--fs-body-xl: 1.8rem;
+	--fs-title-xs: 1.2rem;
+	--fs-title-sm: 1.4rem;
+	--fs-title-md: 1.6rem;
+	--fs-title-lg: 2rem;
+	--fs-title-xl: 2.4rem;
+	--fs-title-2xl: 2.8rem;
+	--fs-title-3xl: 3.2rem;
+	--fs-title-3-6xl: 3.6rem;
+	--fs-title-4xl: 4rem;
+	--fs-title-7-2xl: 7.2rem;
+
+	/* Line Height */
+	--lh-1: 1.6rem;
+	--lh-2: 2rem;
+	--lh-3: 2.4rem;
+	--lh-4: 2.8rem;
+	--lh-5: 3.2rem;
+	--lh-505: 3.6rem;
+	--lh-6: 4rem;
+	--lh-7: 4.8rem;
+}

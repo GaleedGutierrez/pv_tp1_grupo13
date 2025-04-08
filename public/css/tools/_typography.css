@@ -1,0 +1,75 @@
+.heading-4xl {
+	font-size: var(--fs-title-4xl);
+	font-weight: var(--weight-bold);
+	line-height: var(--lh-7);
+}
+
+.heading-3xl {
+	font-size: var(--fs-title-3xl);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-6);
+}
+
+.heading-2xl {
+	font-size: var(--fs-title-2xl);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-5);
+}
+
+.heading-xl {
+	font-size: var(--fs-title-xl);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-4);
+}
+
+.heading-lg {
+	font-size: var(--fs-title-lg);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-3);
+}
+
+.heading-md {
+	font-size: var(--fs-title-md);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-3);
+}
+
+.heading-sm {
+	font-size: var(--fs-title-sm);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-2);
+}
+
+.heading-xs {
+	font-size: var(--fs-title-xs);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-1);
+}
+
+.body-lg {
+	font-size: var(--fs-body-lg);
+	font-weight: var(--weight-normal);
+	line-height: var(--lh-3);
+}
+
+.body-md {
+	font-size: var(--fs-body-md);
+	font-weight: var(--weight-normal);
+	line-height: var(--lh-2);
+}
+
+.body-sd {
+	font-size: var(--fs-body-sm);
+	font-weight: var(--weight-normal);
+	line-height: var(--lh-1);
+}
+
+/* .font-fjalla {
+	font-family: "Fjalla One", var(--font-fallback);
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.font-opensans {
+	font-family: "Open Sans", var(--font-fallback);
+} */

@@ -1,0 +1,35 @@
+h1 {
+	font-size: var(--fs-title-4xl);
+	font-weight: var(--weight-bold);
+	line-height: var(--lh-7);
+}
+
+h2 {
+	font-size: var(--fs-title-3xl);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-6);
+}
+
+h3 {
+	font-size: var(--fs-title-2xl);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-5);
+}
+
+h4 {
+	font-size: var(--fs-title-xl);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-4);
+}
+
+h5 {
+	font-size: var(--fs-title-lg);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-3);
+}
+
+h6 {
+	font-size: var(--fs-title-md);
+	font-weight: var(--weight-semibold);
+	line-height: var(--lh-3);
+}

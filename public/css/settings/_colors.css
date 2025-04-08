@@ -1,0 +1,13 @@
+:root {
+	/* Primary */
+	--neutral-50: oklch(98.5% 0 0);
+	--neutral-600: oklch(43.9% 0 0);
+	--pure-white: oklch(100% 0 0);
+	--pure-black: oklch(0% 0 0);
+
+	/* Background */
+	--background-primary: var(--neutral-50);
+
+	/* Text */
+	--text-color-primary: var(--neutral-600);
+}
