@@ -49,6 +49,14 @@ npm run stylelint:fix
 npx stylelint "/*.css" --fix
 ```
 
+## CSS
+
+La unidad 1rem es equivalente a 10px.
+
+```css
+1rem = 10px
+```
+
 ## 👥 Integrantes
 
 - **[Alfredo Ezequiel Gonzalez Lopez](https://github.com/Ezequiel12354s)**
