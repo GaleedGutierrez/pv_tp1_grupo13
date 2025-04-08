@@ -7,59 +7,298 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Quicksand&display=swap"
-			rel="stylesheet"
-		/>
-		<link
 			rel="stylesheet"
 			href="./css/museos.css"
 		/>
-		<title>Galería Moderna</title>
+		<title>Museos</title>
+		<style>
+			:root {
+				--font-fallback-base:
+					system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
+					"Noto Sans", helvetica, arial, sans-serif,
+					"Apple Color Emoji", "Segoe UI Emoji";
+				--font-fallback-tahoma:
+					"Adjusted Tahoma Fallback", var(--font-fallback-base);
+				--font-fallback-poppins:
+					"Adjusted Arial Fallback", var(--font-fallback-base);
+				--font-heading: "Big Shoulders", var(--font-fallback-tahoma);
+				--font-body: Poppins, var(--font-fallback-poppins);
+			}
+			@font-face {
+				font-family: "Adjusted Tahoma Fallback";
+				src: local(Tahoma);
+				size-adjust: 99%;
+				font-size: 16px;
+				line-height: 1.6;
+				letter-spacing: -1.7px;
+				word-spacing: 0px;
+				font-size: 16px;
+			}
+
+			@font-face {
+				font-family: "Adjusted Arial Fallback";
+				src: local(Arial);
+				size-adjust: 109%;
+				descent-override: 43%;
+				font-size: 16px;
+				line-height: 1.6;
+				letter-spacing: 0.95px;
+				word-spacing: -0.65px;
+			}
+
+			@font-face {
+				font-family: "Big Shoulders";
+				src:
+					local("Big Shoulders Display"),
+					local("BigShouldersDisplay"),
+					url("./assets/fonts/big-shoulders/big-shoulders-v2-latin-900.woff2")
+						format("woff2");
+				font-weight: var(--weight-black);
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: "Poppins";
+				src:
+					local("Poppins"),
+					local("Poppins"),
+					url("./assets/fonts/poppins/Poppins-Light.woff2")
+						format("woff2");
+				font-weight: var(--weight-light);
+				font-style: normal;
+				font-display: swap;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="grid-container">
-			<div class="texto-principal">
-				<h1>UN DÍA EN LA GALERÍA</h1>
-				<p>
-					Pasee por nuestras distintas colecciones y descubra cosas
-					nuevas sobre nuestros artistas. Sumérgete en los detalles de
-					su proceso creativo.
-				</p>
-			</div>
-
-			<div class="imagen1">
-				<a
-					href="https://museobarriodeflores.com.ar/el-museo/?gad_source=1"
-					target="_blank"
-				>
+		<header class="header header--position-initial">
+			<a
+				class="heading-md header__logo--dark"
+				href="./"
+				>Gente</a
+			>
+			<nav class="header__nav">
+				<a href="./">Home</a>
+				<a href="./museos.html">Museos</a>
+				<a href="./contacto.html">Contacto</a>
+			</nav>
+		</header>
+		<main class="main">
+			<h1 class="main__title">Museos que puedes visitar</h1>
+			<section class="main__museums">
+				<article class="card">
 					<img
-						src="./assets/images/imagen2.jpg"
-						alt="Galería 1"
+						class="card__image"
+						src="./assets/images/museums/museum-1.jpg"
+						alt="Museo Hermitage"
 					/>
-				</a>
-			</div>
-
-			<div class="imagen2">
-				<img
-					src="./assets/images/imagen4.jpg"
-					alt="Galería 2"
-				/>
-			</div>
-
-			<div class="imagen3">
-				<img
-					src="./assets/images/imagen5.jpg"
-					alt="Galería 3"
-				/>
-			</div>
-
-			<div class="bloque-inspiracion">
-				<h2>VEN E INSPÍRATE</h2>
-				<p>
-					Estamos encantados de darle la bienvenida a nuestra galería
-					y ver cómo nuestras colecciones le influyen.
-				</p>
-			</div>
-		</div>
+					<h4 class="card__title">Museo Hermitage</h4>
+					<p class="card__description">
+						Con más de tres millones de piezas, este museo de San
+						Petersburgo es el más importante de Rusia y uno de los
+						más completos del mundo en cuanto a antigüedades se
+						refiere, sobre todo procedentes de las culturas griega y
+						romana.
+					</p>
+					<a
+						href="https://www.hermitagemuseum.org/panorama/pano_1/?floorNum=1&lng="
+						class="boton card__link"
+						target="_blank"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-2.jpg"
+						alt="Museo del Prado"
+					/>
+					<h4 class="card__title">Museo del Prado</h4>
+					<p class="card__description">
+						La que probablemente es la mejor pinacoteca del mundo,
+						celebró en 2019 su 200 aniversario. Abrió sus puertas el
+						19 de noviembre de 1819 con apenas 311 obras de la
+						Colección Real.
+					</p>
+					<a
+						target="_blank"
+						href="https://www.museodelprado.es/coleccion/obras-de-arte"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-3.jpg"
+						alt="Galería Uffizi"
+					/>
+					<h4 class="card__title">Galería Uffizi</h4>
+					<p class="card__description">
+						En Florencia, la Galería Uffizi contiene la colección de
+						obras de arte adquiridas por la familia Medici hasta el
+						siglo XVIII. En ella se puede ver El nacimiento de Venus
+						de Sandro Botticelli, La Anunciación de Leonardo da
+						Vinci o la Venus de Urbino de Tiziano.
+					</p>
+					<a
+						target="_blank"
+						href="https://www.virtualuffizi.com/es/visita-virtual.html"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-4.jpg"
+						alt="Museo del Louvre"
+					/>
+					<h4 class="card__title">Museo del Louvre</h4>
+					<p class="card__description">
+						Con obras dedicadas al impresionismo, a las bellas
+						artes, a la arqueología y a las artes decorativas, sin
+						duda, la obra estrella del Museo del Louvre es la Mona
+						Lisa o Gioconda de Leonardo da Vinci.
+					</p>
+					<a
+						target="_blank"
+						href="https://www.louvre.fr/en/visites-en-ligne"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-5.jpg"
+						alt="Museo de Arte Moderno de Nueva York (MOMA)"
+					/>
+					<h4 class="card__title">
+						Museo de Arte Moderno de Nueva York (MOMA)
+					</h4>
+					<p class="card__description">
+						El Museo de Arte Moderno de Nueva York (Museum of Modern
+						Art, MoMa), cuenta con una de las mejores colecciones de
+						arte moderno y contemporáneo (entre finales del siglo
+						XIX y XX) del mundo.
+					</p>
+					<a
+						target="_blank"
+						href="https://www.moma.org/interactives/destination/"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-6.jpg"
+						alt="Museos Vaticanos"
+					/>
+					<h4 class="card__title">Museos Vaticanos</h4>
+					<p class="card__description">
+						Propiedad de la Iglesia Católica y situados en Ciudad de
+						Vaticano, los Museos Vaticanos están formados por
+						museos, jardines y villas pontificias.
+					</p>
+					<a
+						target="_blank"
+						href="https://www.museivaticani.va/content/museivaticani/en.html"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-7.jpg"
+						alt="British Museum"
+					/>
+					<h4 class="card__title">British Museum</h4>
+					<p class="card__description">
+						Este museo de Londres cuenta con una de las colecciones
+						más grandes e importantes del mundo. Con más de ocho
+						millones de piezas sobre historia, arqueología,
+						etnografía y arte, fue el primer museo nacional del
+						mundo creado en 1753. Hoy, su colección puede verse a
+						golpe de clic gracias a la colaboración de esta entidad
+						con Google.
+					</p>
+					<a
+						target="_blank"
+						href="https://britishmuseum.withgoogle.com/"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-8.jpg"
+						alt="Museo d'Orsay"
+					/>
+					<h4 class="card__title">Museo d'Orsay</h4>
+					<p class="card__description">
+						Esta pinacoteca parisina conocida por su rica colección
+						de arte impresionista, alberga la creación de los
+						artistas que vivieron y trabajaron en Francia entre 1848
+						y 1914. Así, obras de Monet, Cézanne o Gauguin pueden
+						verse en las salas de esta antigua estación con aspecto
+						de palacio, inaugurada para la exposición universal de
+						1900.
+					</p>
+					<a
+						target="_blank"
+						href="https://artsandculture.google.com/partner/musee-dorsay-paris?hl=en"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+				<article class="card">
+					<img
+						class="card__image"
+						src="./assets/images/museums/museum-9.jpg"
+						alt="Museo Nacional de Antropología de México"
+					/>
+					<h4 class="card__title">
+						Museo Nacional de Antropología de México
+					</h4>
+					<p class="card__description">
+						Al otro lado del charco, el museo de aqueología e
+						historia de México también colabora con la herramienta
+						de Street View. Coantruido en 1964, cuenta con 23 salas
+						que exhiben el legado arqueológico de los pueblos de
+						Mesoamérica, tales como los de la civilización maya, con
+						el objetivo de mostrar la diversidad cultural del país.
+					</p>
+					<a
+						target="_blank"
+						href="https://artsandculture.google.com/asset/the-national-museum-of-anthropology-mexico-city-ziko-van-dijk-wikimedia-commons/bAGSHRdlzSRcdQ?hl=en"
+						class="boton card__link"
+					>
+						<span class="buton__text">Ver web</span>
+						<div class="boton__flecha">&gt;</div>
+					</a>
+				</article>
+			</section>
+		</main>
 	</body>
 </html>
