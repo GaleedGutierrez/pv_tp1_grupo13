@@ -12,3 +12,6 @@
 
 /* Atoms */
 @import url("./atoms/index.css");
+
+/* Molecules */
+@import url("./molecules/index.css");
