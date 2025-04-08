@@ -8,7 +8,7 @@ body {
 	padding: 40px;
 	background-color: #fff;
 	color: #333;
-	font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif; /* Letra */
 }
 
 .grid-container {
@@ -26,14 +26,14 @@ body {
 
 .texto-principal h1 {
 	margin-bottom: 25px;
-	font-family: "Bebas Neue", sans-serif;
+	font-family: "Bebas Neue", sans-serif; /* Letra */
 	font-size: 6rem;
 	letter-spacing: 1px;
 }
 
 .texto-principal p {
 	max-width: 90%;
-	font-family: Nunito, sans-serif;
+	font-family: Nunito, sans-serif; /* Letra */
 	font-size: 1.2rem;
 	line-height: 1.8;
 }
@@ -67,12 +67,12 @@ body {
 
 .bloque-inspiracion h2 {
 	margin-bottom: 20px;
-	font-family: "Bebas Neue", sans-serif;
+	font-family: "Bebas Neue", sans-serif; /* Letra */
 	font-size: 5.8rem;
 }
 
 .bloque-inspiracion p {
-	font-family: Nunito, sans-serif;
+	font-family: Nunito, sans-serif; /* Letra */
 	font-size: 1.3rem;
 	line-height: 1.6;
 }
