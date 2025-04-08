@@ -33,7 +33,7 @@ body {
 
 .texto-principal p {
 	max-width: 90%;
-	font-family: Nunito, sans-serif; /* Letra */
+	font-family: Poppins, sans-serif; /* Letra */
 	font-size: 1.2rem;
 	line-height: 1.8;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .bloque-inspiracion p {
-	font-family: Nunito, sans-serif; /* Letra */
+	font-family: Poppins, sans-serif; /* Letra */
 	font-size: 1.3rem;
 	line-height: 1.6;
 }
