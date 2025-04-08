@@ -1,13 +1,9 @@
 @import url("./base/index.css");
 
-.body {
-	position: relative;
-}
-
 .contenedor {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	height: 100vh;
+	height: 90vh;
 	width: 100%;
 }
 
@@ -36,4 +32,66 @@
 	flex-direction: column;
 	justify-content: center;
 	padding: 40px;
+}
+
+.museums__grid-container {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 30px;
+	max-width: 1200px;
+	padding: 4rem;
+	padding-block: 18rem;
+	margin: 0 auto;
+}
+
+.texto-principal {
+	grid-column: 1 / 2;
+}
+
+.imagen1 {
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+	object-fit: cover;
+	height: 100%;
+}
+
+.imagen2 {
+	grid-row: 2 / 4;
+	grid-column: 1 / 2;
+	object-fit: cover;
+	height: 100%;
+}
+
+.imagen3 {
+	grid-row: 2 / 3;
+	grid-column: 2 / 3;
+	object-fit: cover;
+	height: 100%;
+}
+
+.bloque-inspiracion {
+	display: flex;
+	grid-row: 3 / 4;
+	grid-column: 2 / 3;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	padding: 40px 30px;
+	background-color: var(--almost-black);
+	color: var(--white);
+}
+
+.bloque-inspiracion h2 {
+	margin-bottom: 20px;
+}
+
+@media (width <= 900px) {
+	.imagen1,
+	.imagen2,
+	.imagen3,
+	.bloque-inspiracion {
+		grid-row: initial;
+		grid-column: initial;
+	}
 }

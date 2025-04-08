@@ -1,28 +1,28 @@
 .heading-xl {
 	font-family: var(--font-heading);
 	font-size: var(--fs-title-xl);
-	font-weight: var(--weight-back);
+	font-weight: var(--weight-black);
 	line-height: var(--lh-title-xl);
 }
 
 .heading-lg {
 	font-family: var(--font-heading);
 	font-size: var(--fs-title-lg);
-	font-weight: var(--weight-back);
+	font-weight: var(--weight-black);
 	line-height: var(--lh-title-lg);
 }
 
 .heading-md {
 	font-family: var(--font-heading);
 	font-size: var(--fs-title-md);
-	font-weight: var(--weight-back);
+	font-weight: var(--weight-black);
 	line-height: var(--lh-title-md);
 }
 
 .heading-sm {
 	font-family: var(--font-heading);
 	font-size: var(--fs-title-sm);
-	font-weight: var(--weight-back);
+	font-weight: var(--weight-black);
 	line-height: var(--lh-title-sm);
 }
 

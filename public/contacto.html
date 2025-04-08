@@ -6,57 +6,176 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<title>Contacto - ubicacion</title>
 		<link
 			rel="stylesheet"
 			href="/public/css/contacto.css"
 		/>
+		<style>
+			:root {
+				--font-fallback-base:
+					system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
+					"Noto Sans", helvetica, arial, sans-serif,
+					"Apple Color Emoji", "Segoe UI Emoji";
+				--font-fallback-tahoma:
+					"Adjusted Tahoma Fallback", var(--font-fallback-base);
+				--font-fallback-poppins:
+					"Adjusted Arial Fallback", var(--font-fallback-base);
+				--font-heading: "Big Shoulders", var(--font-fallback-tahoma);
+				--font-body: Poppins, var(--font-fallback-poppins);
+			}
+			@font-face {
+				font-family: "Adjusted Tahoma Fallback";
+				src: local(Tahoma);
+				size-adjust: 99%;
+				font-size: 16px;
+				line-height: 1.6;
+				letter-spacing: -1.7px;
+				word-spacing: 0px;
+				font-size: 16px;
+			}
+
+			@font-face {
+				font-family: "Adjusted Arial Fallback";
+				src: local(Arial);
+				size-adjust: 109%;
+				descent-override: 43%;
+				font-size: 16px;
+				line-height: 1.6;
+				letter-spacing: 0.95px;
+				word-spacing: -0.65px;
+			}
+
+			@font-face {
+				font-family: "Big Shoulders";
+				src:
+					local("Big Shoulders Display"),
+					local("BigShouldersDisplay"),
+					url("./assets/fonts/big-shoulders/big-shoulders-v2-latin-900.woff2")
+						format("woff2");
+				font-weight: var(--weight-black);
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: "Poppins";
+				src:
+					local("Poppins"),
+					local("Poppins"),
+					url("./assets/fonts/poppins/Poppins-Light.woff2")
+						format("woff2");
+				font-weight: var(--weight-light);
+				font-style: normal;
+				font-display: swap;
+			}
+		</style>
+		<title>Contacto - ubicacion</title>
 	</head>
 	<body>
-		<section class="map-section">
-			<button class="back-button">
+		<header class="header header--position-initial">
+			<a
+				class="heading-md header__logo--dark"
+				href="./"
+				>Gente</a
+			>
+			<nav class="header__nav">
+				<a href="./">Home</a>
+				<a href="./museos.html">Museos</a>
+				<a href="./contacto.html">Contacto</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="map-section">
 				<a
-					href="/public/index.html"
-					class="button"
-					>← BACK TO HOME</a
+					href="./"
+					class="boton boton--reverse back-button"
 				>
-			</button>
-			<img
-				src="/public/assets/images/Bitmap.jpg"
-				alt="Mapa de ubicación"
-				class="mapa"
-			/>
-		</section>
+					<span class="buton__text">Volver al inicio</span>
+					<div class="boton__flecha">&gt;</div>
+				</a>
+				<img
+					src="/public/assets/images/Bitmap.jpg"
+					alt="Mapa de ubicación"
+					class="mapa"
+				/>
+			</section>
 
-		<section class="ubicacion-section">
-			<div class="ubicacion-container">
-				<div class="titulo">
-					<h2>NUESTRA<br />UBICACIÓN</h2>
+			<section class="ubicacion-section">
+				<div class="ubicacion-container">
+					<h1 class="titulo">NUESTRA<br />UBICACIÓN</h1>
+
+					<div class="direccion">
+						<h2 class="direccion__title">99 KING STREET</h2>
+						<p>Newport<br />RI 02840<br />Estados Unidos</p>
+						<p class="descripcion">
+							Nuestra recién inaugurada galería está situada cerca
+							de la Edward King House, en el número 99 de King
+							Street. La Galería de Arte Moderno es gratuita para
+							todos los visitantes y abre los siete días de la
+							semana de 8.00 a 21.00 horas.
+						</p>
+					</div>
 				</div>
+			</section>
 
-				<div class="direccion">
-					<h3>99 KING STREET</h3>
-					<p>Newport<br />RI 02840<br />United States of America</p>
-					<p class="descripcion">
-						Our newly opened gallery is located near the Edward King
-						House on 99 King Street, the Modern Art Gallery is free
-						to all visitors and open seven days a week from 8am to
-						9pm.
-					</p>
-				</div>
-			</div>
-		</section>
+			<section class="form-section">
+				<h3 class="form__title">Contactanos</h3>
 
-		<footer class="footer">
-			<div class="footer-content">
-				<h4>MODERN ART GALLERY</h4>
-				<p>
-					The Modern Art Gallery is free to all visitors and open
-					seven days a week from 8am to 9pm. Find us at 99 King
-					Street, Newport, USA.
-				</p>
-				<div class="social-icons"></div>
-			</div>
+				<form
+					class="form-container"
+					method="post"
+					id="contact-form"
+					name="contact-form"
+				>
+					<div class="form__group">
+						<label>
+							<input
+								type="text"
+								class="form-control"
+								name="name"
+								id="name"
+								placeholder="Tu nombre"
+								autocomplete="name"
+							/>
+						</label>
+						<label>
+							<input
+								type="text"
+								class="form-control"
+								name="email"
+								id="email"
+								placeholder="tucorreo@correo.com"
+								autocomplete="email"
+							/>
+						</label>
+					</div>
+					<label class="form__message">
+						<textarea
+							class="form-control"
+							name="message"
+							id="message"
+							placeholder="Escríbenos tu mensaje aquí..."
+						></textarea>
+					</label>
+					<button
+						type="submit"
+						class="boton"
+					>
+						<span class="buton__text">Enviar</span>
+						<div class="boton__flecha">&gt;</div>
+					</button>
+				</form>
+			</section>
+		</main>
+
+		<footer class="footer footer--gold">
+			<h4>GENTE</h4>
+			<p class="footer__text">
+				La Galeria de Arte Moderna es gratuita para todos los dias de la
+				semana de 8 a 21 horas. Encuentranos en el 99 de King Street
+				Newport
+			</p>
 		</footer>
 	</body>
 </html>
