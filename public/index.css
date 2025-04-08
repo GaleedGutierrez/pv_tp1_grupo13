@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: white;
+	font-family: Poppins, sans-serif;
+}
+
+.contenedor {
+	display: flex;
+	height: 100vh;
+}
+
+.lado-izquierdo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+	padding: 40px 30px;
+	background-color: #111;
+	color: white;
+}
+
+.marca {
+	margin-bottom: 40px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 48px;
+	letter-spacing: 1px;
+}
+
+.titulo {
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 60px;
+	line-height: 1.1;
+}
+
+.titulo span {
+	padding: 0 5px;
+	background-color: white;
+	color: black;
+}
+
+.lado-derecho {
+	display: flex;
+	flex: 1;
+}
+
+.imagen {
+	flex: 1;
+	overflow: hidden;
+}
+
+.imagen img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.info-texto {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	padding: 40px;
+}
+
+.nav {
+	display: flex;
+	gap: 20px;
+	justify-content: flex-end;
+	margin-bottom: 40px;
+}
+
+.nav a {
+	color: black;
+	font-size: 15px;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.texto {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	font-family: Poppins, sans-serif;
+	font-weight: 300;
+}
+
+.texto p {
+	color: #333;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 15px;
+	margin-top: 20px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+	background-color: #333;
+}
+
+.boton .flecha {
+	padding: 10px 15px;
+	margin-left: 10px;
+	background-color: #d89c6c;
+	color: white;
+}
