@@ -87,10 +87,6 @@
 }
 
 @media (width <= 900px) {
-	/* .grid-container {
-		grid-template-rows: auto;
-		grid-template-columns: 1fr;
-	} */
 	.imagen1,
 	.imagen2,
 	.imagen3,
