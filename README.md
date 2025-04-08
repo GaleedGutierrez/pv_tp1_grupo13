@@ -33,6 +33,22 @@ abre la terminal en el directorio del proyecto y ejecuta el siguiente comando:
 npm install
 ```
 
+## ¿Tenes un error al hacer commit?
+
+Ejecuta los siguientes comando en tu terminal para solucionarlos
+
+```bash
+npm run prettier:fix
+npx prettier ./ --write
+```
+
+o
+
+```bash
+npm run stylelint:fix
+npx stylelint "/*.css" --fix
+```
+
 ## 👥 Integrantes
 
 - **[Alfredo Ezequiel Gonzalez Lopez](https://github.com/Ezequiel12354s)**
