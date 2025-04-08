@@ -32,3 +32,14 @@
 		color: var(--white);
 	}
 }
+
+.boton--reverse {
+	.buton__text {
+		order: 1;
+	}
+
+	.boton__flecha {
+		rotate: 180deg;
+		order: 0;
+	}
+}
