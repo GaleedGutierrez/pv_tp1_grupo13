@@ -11,13 +11,22 @@
 	.header__nav {
 		display: flex;
 		gap: var(--space-6);
+		align-items: center;
 	}
 
 	.header__logo {
 		color: var(--white);
 
+		.header__logo--dark {
+			color: var(--dark-gray);
+		}
+
 		&:active {
 			color: var(--gold);
 		}
 	}
+}
+
+.header--position-initial {
+	position: initial;
 }

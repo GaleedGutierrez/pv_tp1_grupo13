@@ -1,0 +1,25 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-5);
+	padding: var(--space-8);
+	border: 0.1rem solid var(--almost-black);
+}
+
+.card__image {
+	object-fit: cover;
+	block-size: 30rem;
+}
+
+.card__description {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.card__link {
+	max-inline-size: 20.5rem;
+}

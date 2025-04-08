@@ -27,7 +27,6 @@
 	.boton__flecha {
 		display: flex;
 		align-items: center;
-		height: 100%;
 		padding-inline: var(--space-6);
 		background-color: var(--gold);
 		color: var(--white);
