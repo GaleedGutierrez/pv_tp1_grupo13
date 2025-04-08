@@ -1,0 +1,39 @@
+@import url("./base/index.css");
+
+.body {
+	position: relative;
+}
+
+.contenedor {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	height: 100vh;
+	width: 100%;
+}
+
+.lado-izquierdo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-inline: 30px;
+	background-color: var(--almost-black);
+	color: var(--white);
+
+	.titulo span {
+		padding-inline: 5px;
+		background-color: var(--white);
+		color: var(--almost-black);
+	}
+}
+
+.imagen img {
+	object-fit: cover;
+	height: 100%;
+}
+
+.lado-derecho {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 40px;
+}
